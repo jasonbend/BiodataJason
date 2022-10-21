@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:stretchColumns="1"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="209dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@drawable/ppk"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
+        android:background="#306754"
+        android:visibility="visible" />
+
+    <TableLayout
+        android:id="@+id/tabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        !Nama
+        <TableRow
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textStyle="bold"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:textColor="#FF000000"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#FF000000"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jason Benedictus"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#306754"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </TableRow>
+
+        !NIM
+        <TableRow
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIM"
+                android:textStyle="bold"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:textColor="#FF000000"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#FF000000"
+                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A11.2021.13327"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#306754"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </TableRow>
+
+        !Hobby
+        <TableRow
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hobi"
+                android:textStyle="bold"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:textColor="#FF000000"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#FF000000"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bermain Musik"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#306754"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#306754"
+        android:visibility="visible" />
+
+    !Deskripsi
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Saya Jason, mahasiswa Universitas Dian Nuswantoro fakultas Ilmu komputer, prodi Teknik Informatika ."
+        android:textAlignment="center"
+        android:textSize="17dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTACT:"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:textColor="#306754"
+        tools:ignore="HardcodedText" />
+
+    !Email
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:autoLink="email"
+        android:linksClickable="true"
+        android:paddingBottom="5dp"
+        android:text="111202113327@mhs.dinus.ac.id"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        tools:ignore="HardcodedText" />
+
+    !Map
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="https://goo.gl/maps/QsKqFugT4PRUkbWKA"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:paddingBottom="5dp"
+        tools:ignore="HardcodedText" />
+
+    !Telpon
+    <Button
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:linksClickable="true"
+        android:text="0895342885199"
+        android:textColorLink="#000000"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
